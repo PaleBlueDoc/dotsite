@@ -1,0 +1,18 @@
+server:
+
+  port: 8980
+
+  servlet:
+    context-path: /
+
+spring:
+  mvc:
+    static-path-pattern: /static/**
+
+  datasource:
+    driver-class-name: net.sf.log4jdbc.DriverSpy
+
+  thymeleaf:
+    cache: false
+    check-template: false
+    check-template-location: false
