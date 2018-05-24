@@ -1,15 +1,16 @@
 server:
 
-  port: 8080
+    port: 8080
 
-  servlet:
-    context-path: /
+    servlet:
+        context-path: /
 
 spring:
-  mvc:
-    static-path-pattern: /static/**
+    mvc:
+        static-path-pattern: /static/**
 
-  datasource:
-    url:  jdbc:log4jdbc:mysql://192.168.6.42:3306/dotsite?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
-    username: dotsite
-    password: 123456
+    datasource:
+        url: jdbc:log4jdbc:mysql://192.168.6.42:3306/dotsite?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+        username: dotsite
+        password: 123456
+        driver-class-name: net.sf.log4jdbc.DriverSpy

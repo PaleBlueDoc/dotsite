@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("test")
-public class testController {
+public class TestController {
 
     @RequestMapping(value = {""})
     public String list(Model model) {
